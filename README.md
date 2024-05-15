@@ -19,5 +19,5 @@ and
 $u_0(x,y),v_0(x,y)$ are random numbers. $\beta, \thinspace d, \thinspace \alpha,\thinspace \gamma$ are scalar constants
 
 <p align="center" width="100%">
-    <img width="33%" src="image.png">
+    <img width="33%" src="media/image_.png">
 </p>

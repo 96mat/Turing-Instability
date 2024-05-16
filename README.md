@@ -30,12 +30,18 @@ $u_0(x,y),v_0(x,y)$ sono numeri randomici. $\beta, \thinspace d, \thinspace \alp
 
 ## TN.ipynb
 $$\begin{cases}
-\frac{\partial X}{\partial t}=a(X-h)+b(Y-k)+\mu \nabla^2 X \qquad (2)\\
+\frac{\partial X}{\partial t}=a(X-h)+b(Y-k)+\mu \nabla^2 X \qquad (2)\\\\
 \frac{\partial X}{\partial t}=c(X-h)+d(Y-k)+\nu \nabla^2 Y\\
 +\text{Periodic BC}
 \end{cases}$$
 
 la cui Forma debole ([pagina 9](https://www.diva-portal.org/smash/get/diva2:1780187/FULLTEXT01.pdf))
+```math
+\begin{align}
+\int_{\Omega} (X^{n+1}-X^n)v+\mu \Delta t \nabla X^{n+1}\nabla v- \Delta t(aX^{n+1}+bY^{n+1})v\thinspace d\Omega &=0\\
+\int_{\Omega} (Y^{n+1}-Y^n)v+\nu \Delta t \nabla Y^{n+1}\nabla v- \Delta t(cX^{n+1}+dY^{n+1})v\thinspace d\Omega &=0
+\end{align}
+```
 
 la soluzione che ho ottenuto:
 <p align="center" width="100%">

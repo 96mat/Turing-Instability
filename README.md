@@ -9,6 +9,7 @@ $$\begin{cases} u_t-\varDelta u=f(u,v)\\
               v_t -d\varDelta v =g(u,v) \qquad(1)\\ 
               u(x,y,z)=u_0(x,y)\\ 
               v(x,y,z)=v_0(x,y)\\ 
+              + \text{Neuman BC}\\
               +\text{Periodic BC} 
 \end{cases}$$
 
@@ -30,6 +31,12 @@ $u_0(x,y),v_0(x,y)$ sono numeri randomici. $\beta, \thinspace d, \thinspace \alp
 $$\begin{cases}
 \frac{\partial X}{\partial t}=a(X-h)+b(Y-k)+\mu \nabla^2 X \qquad (2)\\
 \frac{\partial X}{\partial t}=c(X-h)+d(Y-k)+\nu \nabla^2 Y\\
++\text{Periodic BC}
 \end{cases}$$
 
 la cui Forma debole ([pagina 9](https://www.diva-portal.org/smash/get/diva2:1780187/FULLTEXT01.pdf))
+
+la soluzione che ho ottenuto:
+<p align="center" width="100%">
+    <img width="33%" src="media/TN.png">
+</p>

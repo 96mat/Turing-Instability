@@ -2,6 +2,7 @@
 la repo è costituita da due script principalmente:
 + Il codice ```MixedWF_CH.ipynb``` in cui viene approcciato il problema non lineare $(1)$, con risultati non adatti
 + Il codice  ```TN.ipynb``` in cui viene approcciato un problema simile ma omogeneo $(2)$, i risultati sembrano ok
++ Plot delle concentrazioni $u,v$ in ```FreeFEM```
 ## MixedWF_CH.ipynb
 Advection-Diffusion Eq
 

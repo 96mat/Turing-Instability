@@ -49,7 +49,7 @@ F =  (u_1*v_1/dt)*dx \
     + inner(grad(u_1), grad(v_1))*dx \
     + d*inner(grad(u_2), grad(v_2))*dx \
     -(dot(u_n1,v_1)/dt + dot(u_n2,v_2)/dt)*dx \
-    -(dot(u_n[0]-alpha*u_n[0]+gamma*u_n[0]*u_n[0]-u_n[0]**3,v_1) + dot(u_n[0]-beta*u_n[0],v_2))*dx 
+    -(dot(u_n[0]-alpha*u_n[1]+gamma*u_n[0]*u_n[1]-u_n[0]**3,v_1) + dot(u_n[0]-beta*u_n[1],v_2))*dx 
 ```
 ## TN.ipynb
 $$\begin{cases}

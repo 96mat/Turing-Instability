@@ -71,6 +71,8 @@ la soluzione che ho ottenuto:
     <img width="33%" src="media/TN.png">
 </p>
 
+[ulteriormente](media/TN.mp4)
+
 ## FreeFEM
 plot ottenuto attraverso il codice FreeFEM
 

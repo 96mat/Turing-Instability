@@ -28,6 +28,8 @@ $u_0(x,y),v_0(x,y)$ sono numeri randomici. $\beta, \thinspace d, \thinspace \alp
     <img width="33%" src="media/image_.png">
 </p>
 
+[Ulteriormente](media/Current_Solution.mp4)
+
 Idea per l'implementazione delle funzioni ```ff, gg```  in modo <i>simbolico</i> da poter usare nella formulazione debole:
 
 ```markdown

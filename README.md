@@ -42,7 +42,7 @@ in alternativa all'interno della formulazione debole, si accedono alle component
 u_n=Function(V)
 u_n1, u_n2 =split(u_n)
 ``` 
-usando ```u_n[0],u_n[1]``` e scrivendo direttamente $f(u,v),\thinspace g(u,v)$ nella formulazione debole:
+usando ```u_n[0], u_n[1]``` e scrivendo direttamente $f(u,v),\thinspace g(u,v)$ nella formulazione debole:
 ```
 F =  (u_1*v_1/dt)*dx \
     + (u_2*v_2/dt)*dx \

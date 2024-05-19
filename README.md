@@ -53,6 +53,21 @@ F =  (u_1*v_1/dt)*dx \
     -(dot(u_n1,v_1)/dt + dot(u_n2,v_2)/dt)*dx \
     -(dot(u_n[0]-alpha*u_n[1]+gamma*u_n[0]*u_n[1]-u_n[0]**3,v_1) + dot(u_n[0]-beta*u_n[1],v_2))*dx 
 ```
+altrimenti
+```
+def ff(u_n1,u_n2):
+    return u_n1-A*u_n2+G*u_n1*u_n2-u_n1**3
+def gg(u_n1,u_n2):
+    return u_n1-B*u_n2
+
+# Define variational problem
+F =  (u_1*v_1/dt)*dx \
+    + (u_2*v_2/dt)*dx \
+    + inner(grad(u_1), grad(v_1))*dx \
+    + d*inner(grad(u_2), grad(v_2))*dx \
+    -(dot(u_n1,v_1)/dt + dot(u_n2,v_2)/dt)*dx \
+    -(dot(ff(u_n1,u_n2),v_1) + dot(gg(u_n1,u_n2),v_2))*dx 
+```
 ## TN.ipynb
 $$\begin{cases}
 \frac{\partial X}{\partial t}=a(X-h)+b(Y-k)+\mu \nabla^2 X \qquad (2)\\\\

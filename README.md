@@ -71,7 +71,7 @@ F =  (u_1*v_1/dt)*dx \
 ## TN.ipynb
 $$\begin{cases}
 \frac{\partial X}{\partial t}=a(X-h)+b(Y-k)+\mu \nabla^2 X \qquad (2)\\\\
-\frac{\partial X}{\partial t}=c(X-h)+d(Y-k)+\nu \nabla^2 Y\\
+\frac{\partial Y}{\partial t}=c(X-h)+d(Y-k)+\nu \nabla^2 Y\\
 +\text{Periodic BC}
 \end{cases}$$
 

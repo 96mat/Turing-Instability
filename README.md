@@ -1,6 +1,6 @@
 # Turing Instability
 la repo è costituita da due script principalmente:
-+ Il codice ```MixedWF_CH.ipynb``` e ```MixedWF_CH_v1.ipynb``` in cui viene approcciato il problema non lineare $(1)$, con risultati non adatti
++ Il codice ```MixedWF_CH.ipynb```, ```MixedWF_CH_v1.ipynb``` e ```MixedWF_CH_v2.ipynb``` in cui viene approcciato il problema non lineare $(1)$, con risultati non adatti
 + Il codice  ```TN.ipynb``` in cui viene approcciato un problema simile ma lineare $(2)$, i risultati sembrano ok
 + Plot delle concentrazioni $u,v$ in ```FreeFEM```
 ## MixedWF_CH.ipynb, MixedWF_CH_v1.ipynb

@@ -3,7 +3,7 @@ la repo è costituita da due script principalmente:
 + Il codice ```MixedWF_CH.ipynb```, ```MixedWF_CH_v1.ipynb``` e ```MixedWF_CH_v2.ipynb``` in cui viene approcciato il problema non lineare $(1)$, con risultati non adatti
 + Il codice  ```TN.ipynb``` in cui viene approcciato un problema simile ma lineare $(2)$, i risultati sembrano ok
 + Plot delle concentrazioni $u,v$ in ```FreeFEM```
-## MixedWF_CH.ipynb, MixedWF_CH_v1.ipynb
+## MixedWF_CH.ipynb, MixedWF_CH_v1.ipynb, MixedWF_CH_v2.ipynb
 Advection-Diffusion Eq
 
 $$\begin{cases} u_t-\varDelta u=f(u,v)\\ 
@@ -22,7 +22,19 @@ $$\begin{align}
 \end{align}$$
 
 and
-$u_0(x,y),v_0(x,y)$ sono numeri randomici. $\beta, \thinspace d, \thinspace \alpha,\thinspace \gamma$ sono costanti, il risultato:
+$u_0(x,y),v_0(x,y)$ sono le _initial condition_ e sono inizializzate con la classe ```IC``` cioè distribuzioni pseudo-randomiche. 
+
+```
+#Initial condtions (Random)
+class IC(UserExpression):
+    def eval(self,values,x):
+        values[0] = 0.1*random() -0.1*random()
+        values[1] = 0.1*random() -0.1*random()
+    def value_shape(self):
+        return(2,)
+```
+
+$\beta, \thinspace d, \thinspace \alpha,\thinspace \gamma$ sono costanti, il risultato:
 
 <p align="center" width="100%">
     <img width="33%" src="media/image_.png">
@@ -68,6 +80,8 @@ F =  (u_1*v_1/dt)*dx \
     -(dot(u_n1,v_1)/dt + dot(u_n2,v_2)/dt)*dx \
     -(dot(ff(u_n1,u_n2),v_1) + dot(gg(u_n1,u_n2),v_2))*dx 
 ```
+## MixedWF_CH_v2.ipynb
+E' risolto in 2 possibili modi, usando un solver non-lineare alternativo a ```Newton```, ovvero ```SNES``` i quali i sistemi lineari sono risolti con ```GMRES+HYPRE_AMG (preconditioner)``` 
 ## TN.ipynb
 $$\begin{cases}
 \frac{\partial X}{\partial t}=a(X-h)+b(Y-k)+\mu \nabla^2 X \qquad (2)\\\\
